@@ -1,0 +1,169 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "A collection of scripts for \ngmusicapi\n using \ngmusicapi-wrapper\n.\n\n\nFAQ\n\n\nIs it possible to add support for downloading All Access songs?\n\n\nYes.\n\n\nWould you add support for downloading All Access songs?\n\n\nAlmost certainly never. All Access songs are obviously not intended for download. Your All Access subscription allows you to stream these songs as long as you subscribe. Circumventing this restriction would only bring unwanted attention, criticism, and repercussions to gmusicapi.\n\n\nContact\n\n\nYou can contact the author in \n#gmusicapi\n on \nirc.freenode.net\n or by \ne-mail\n\n\nDonate\n\n\nDonations, as any compliment, are appreciated but not expected. I include these because people have shown interest.",
+            "title": "Home"
+        },
+        {
+            "location": "/#faq",
+            "text": "Is it possible to add support for downloading All Access songs?  Yes.  Would you add support for downloading All Access songs?  Almost certainly never. All Access songs are obviously not intended for download. Your All Access subscription allows you to stream these songs as long as you subscribe. Circumventing this restriction would only bring unwanted attention, criticism, and repercussions to gmusicapi.",
+            "title": "FAQ"
+        },
+        {
+            "location": "/#contact",
+            "text": "You can contact the author in  #gmusicapi  on  irc.freenode.net  or by  e-mail",
+            "title": "Contact"
+        },
+        {
+            "location": "/#donate",
+            "text": "Donations, as any compliment, are appreciated but not expected. I include these because people have shown interest.",
+            "title": "Donate"
+        },
+        {
+            "location": "/install/",
+            "text": "Requirements\n\n\n\n\nPython 3.4+\n\n\ngmusicapi\n\n\ngmusicapi-wrapper\n\n\nmutagen\n\n\ndocopt\n\n\nffmpeg or avconv for uploading (See \nhere\n)\n\n\n\n\nInstallation\n\n\n\n\n\n\nStable release\n\n\npip install gmusicapi-scripts\npip install git+https://github.com/thebigmunch/gmusicapi-scripts\n\n\n\n\n\n\n\nDevelopment release\n\n\npip install git+https://github.com/thebigmunch/gmusicapi-scripts@devel",
+            "title": "Install"
+        },
+        {
+            "location": "/install/#requirements",
+            "text": "Python 3.4+  gmusicapi  gmusicapi-wrapper  mutagen  docopt  ffmpeg or avconv for uploading (See  here )",
+            "title": "Requirements"
+        },
+        {
+            "location": "/install/#installation",
+            "text": "Stable release  pip install gmusicapi-scripts\npip install git+https://github.com/thebigmunch/gmusicapi-scripts    Development release  pip install git+https://github.com/thebigmunch/gmusicapi-scripts@devel",
+            "title": "Installation"
+        },
+        {
+            "location": "/usage/",
+            "text": "General\n\n\nscript [options] [input/output]\n\n\nDuring the first run of the scripts, you will be given a link to authorize the application with Google Music if necessary. Paste that link in your browser and click Allow. Enter the given code into the terminal prompt.\n\n\nOutput pattern replacements\n\n\n\n\n\n\n\n\nPattern\n\n\nField\n\n\n\n\n\n\n\n\n\n\n%artist%\n\n\nartist\n\n\n\n\n\n\n%title%\n\n\ntitle\n\n\n\n\n\n\n%track%\n\n\ntracknumber\n\n\n\n\n\n\n%track2%\n\n\ntracknumber (zero padded)\n\n\n\n\n\n\n%album%\n\n\nalbum\n\n\n\n\n\n\n%date%\n\n\ndate\n\n\n\n\n\n\n%genre%\n\n\ngenre\n\n\n\n\n\n\n%albumartist%\n\n\nalbumartist\n\n\n\n\n\n\n%disc%\n\n\ndiscnumber\n\n\n\n\n\n\n%suggested%\n\n\nFilename suggested by Google\n\n\n\n\n\n\n\n\ngmsearch\n\n\ngmsearch (-h | --help)\ngmsearch [options] [-f FILTER]... [-F FILTER]...\n\n\n\n\n\n\n\n\n\n\nOptions\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\n-h, --help\n\n\nShow help message\n\n\n\n\n\n\n-u USERNAME, --user USERNAME\n\n\nYour Google username or e-mail address\n\n\n\n\n\n\n-p PASSWORD, --pass PASSWORD\n\n\nYour Google or app-specific password\n\n\n\n\n\n\n-I ID --android-id ID\n\n\nAn Android device id.\n\n\n\n\n\n\n-l, --log\n\n\nEnable gmusicapi logging\n\n\n\n\n\n\n-q, --quiet\n\n\nDon't output status messages\nWith -l,--log will display gmusicapi warnings\n\n\n\n\n\n\n-f, --include-filter\n\n\nInclude Google songs by field:pattern filter (e.g. \"artist:Muse\").*\nValues can be any valid \nPython regex pattern\nThis option can be set multiple times\n\n\n\n\n\n\n-F, --exclude-filter\n\n\nExclude Google songs by field:pattern filter (e.g. \"artist:Muse\").*\nValues can be any valid \nPython regex pattern\nThis option can be set multiple times\n\n\n\n\n\n\n-a, --all-includes\n\n\nSongs must match all include filter criteria\n\n\n\n\n\n\n-A, --all-excludes\n\n\nSongs must match all exclude filter criteria\n\n\n\n\n\n\n-y, --yes\n\n\nDisplay results without asking for confirmation\n\n\n\n\n\n\n\n\ngmdelete\n\n\ngmdelete (-h | --help)\ngmdelete [options] [-f FILTER]... [-F FILTER]...\n\n\n\n\n\n\n\n\n\n\nOptions\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\n-h, --help\n\n\nShow help message\n\n\n\n\n\n\n-u USERNAME, --user USERNAME\n\n\nYour Google username or e-mail address\n\n\n\n\n\n\n-p PASSWORD, --pass PASSWORD\n\n\nYour Google or app-specific password\n\n\n\n\n\n\n-I ID --android-id ID\n\n\nAn Android device id.\n\n\n\n\n\n\n-l, --log\n\n\nEnable gmusicapi logging\n\n\n\n\n\n\n-d, --dry-run\n\n\nOutput list of songs that would be uploaded and excluded\n\n\n\n\n\n\n-q, --quiet\n\n\nDon't output status messages\nWith -l,--log will display gmusicapi warnings\n\n\n\n\n\n\n-f, --include-filter\n\n\nInclude Google songs by field:pattern filter (e.g. \"artist:Muse\").*\nValues can be any valid \nPython regex pattern\nThis option can be set multiple times\n\n\n\n\n\n\n-F, --exclude-filter\n\n\nExclude Google songs by field:pattern filter (e.g. \"artist:Muse\").*\nValues can be any valid \nPython regex pattern\nThis option can be set multiple times\n\n\n\n\n\n\n-a, --all-includes\n\n\nSongs must match all include filter criteria\n\n\n\n\n\n\n-A, --all-excludes\n\n\nSongs must match all exclude filter criteria\n\n\n\n\n\n\n-y, --yes\n\n\nDisplay results without asking for confirmation\n\n\n\n\n\n\n\n\ngmsync\n\n\ngmsync (-h | --help)\ngmsync up [-e PATTERN]... [-f FILTER]... [-F FILTER]... [options] [<input>]...\ngmsync down [-e PATTERN]... [-f FILTER]... [-F FILTER]... [options] [<output>]\ngmsync [-e PATTERN]... [-f FILTER]... [-F FILTER]... [options] [<input>]...\n\n\n\n\nSupports \n.mp3\n, \n.flac\n, \n.m4a\n, \n.ogg\n\n\nNon-MP3 files are transcoded with ffmpeg/avconv to 320kbps MP3 for uploading\n\n\n\n\n\n\n\n\nOptions\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\n-h, --help\n\n\nShow help message\n\n\n\n\n\n\n-c, --cred\n\n\nSpecify oauth credential file name to use/create\n(Default: \"oauth\")\n\n\n\n\n\n\n-U ID --uploader-id ID\n\n\nA unique id given as a MAC address (e.g. '00:11:22:33:AA:BB').\nThis should only be provided when the default does not work.\n\n\n\n\n\n\n-l, --log\n\n\nEnable gmusicapi logging\n\n\n\n\n\n\n-m, --match\n\n\nEnable scan and match\n\n\n\n\n\n\n-d, --dry-run\n\n\nOutput list of songs that would be uploaded and excluded\n\n\n\n\n\n\n-q, --quiet\n\n\nDon't output status messages\nWith -l,--log will display gmusicapi warnings\nWith -d,--dry-run will display song list\n\n\n\n\n\n\n--delete-on-success\n\n\nDelete successfully uploaded local files.\n\n\n\n\n\n\n-R, --no-recursion\n\n\nDisable recursion when scanning for local files.\nThis is equivalent to setting --max-depth to 0.\n\n\n\n\n\n\n--max-depth DEPTH\n\n\nSet maximum depth of recursion when scanning for local files.\nDefault is infinite recursion.\nHas no effect when -R, --no-recursion set.\n\n\n\n\n\n\n-e, -exclude\n\n\nExclude file paths matching a Python regex pattern\nThis option can be set multiple times\n\n\n\n\n\n\n-f, --include-filter\n\n\nInclude Google songs (download) or local songs (upload) by field:pattern filter (e.g. \"artist:Muse\").*\nValues can be any valid \nPython regex pattern\nThis option can be set multiple times\n\n\n\n\n\n\n-F, --exclude-filter\n\n\nExclude Google songs (download) or local songs (upload) by field:pattern filter (e.g. \"artist:Muse\").*\nValues can be any valid \nPython regex pattern\nThis option can be set multiple times\n\n\n\n\n\n\n-a, --all-includes\n\n\nSongs must match all include filter criteria\n\n\n\n\n\n\n-A, --all-excludes\n\n\nSongs must match all exclude filter criteria\n\n\n\n\n\n\ninput\n\n\nFiles, directories, or glob patterns to upload\nDefaults to current directory if omitted\n\n\n\n\n\n\noutput\n\n\nOutput file or directory name which can include template patterns\nDefaults to name suggested by Google Music in your current directory\n\n\n\n\n\n\n\n\n* \nFilter fields can be any of artist, title, album, or albumartist/album_artist\n\n\n\n\n\n\n\n\nCommands\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nup\n\n\nSync local songs to Google Music. This is the default behavior.\n\n\n\n\n\n\ndown\n\n\nSync Google Music songs to local computer.\n\n\n\n\n\n\n\n\nExamples:\n\n\ngmsync -m \"/path/to/music\" \"/other/path/to/music.mp3\" \"/another/path/to/*.flac\"\ngmsync up -e 'MyFolderName' \"/path/to/music\"\ngmsync up -f 'artist:Muse' \"/path/to/music\"\ngmsync down -a -f 'artist:Muse' -f 'album:Black Holes' \"/path/to/%artist%/%album%/%title%\"\ngmsync down -f 'artist:Muse|Modest Mouse' \"/path/to/%artist%/%album%/%title%\"\n\n\n\n\ngmupload\n\n\ngmupload (-h | --help)\ngmupload [-e PATTERN]... [-f FILTER]... [-F FILTER]... [options] [<input>]...\n\n\n\n\nSupports \n.mp3\n, \n.flac\n, \n.m4a\n, \n.ogg\n\n\nNon-MP3 files are transcoded with ffmpeg/avconv to 320kbps MP3 for uploading\n\n\n\n\n\n\n\n\nOptions\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\n-h, --help\n\n\nShow help message\n\n\n\n\n\n\n-c, --cred\n\n\nSpecify oauth credential file name to use/create\n(Default: \"oauth\")\n\n\n\n\n\n\n-U ID --uploader-id ID\n\n\nA unique id given as a MAC address (e.g. '00:11:22:33:AA:BB').\nThis should only be provided when the default does not work.\n\n\n\n\n\n\n-l, --log\n\n\nEnable gmusicapi logging\n\n\n\n\n\n\n-m, --match\n\n\nEnable scan and match\n\n\n\n\n\n\n-d, --dry-run\n\n\nOutput list of songs that would be uploaded and excluded\n\n\n\n\n\n\n-q, --quiet\n\n\nDon't output status messages\nWith -l,--log will display gmusicapi warnings\nWith -d,--dry-run will display song list\n\n\n\n\n\n\n--delete-on-success\n\n\nDelete successfully uploaded local files.\n\n\n\n\n\n\n-R, --no-recursion\n\n\nDisable recursion when scanning for local files.\nThis is equivalent to setting --max-depth to 0.\n\n\n\n\n\n\n--max-depth DEPTH\n\n\nSet maximum depth of recursion when scanning for local files.\nDefault is infinite recursion.\nHas no effect when -R, --no-recursion set.\n\n\n\n\n\n\n-e, -exclude\n\n\nExclude file paths matching a Python regex pattern\nThis option can be set multiple times\n\n\n\n\n\n\n-f, --include-filter\n\n\nInclude local songs by field:pattern filter (e.g. \"artist:Muse\").*\nValues can be any valid \nPython regex pattern\nThis option can be set multiple times\n\n\n\n\n\n\n-F, --exclude-filter\n\n\nExclude local songs by field:pattern filter (e.g. \"artist:Muse\").*\nValues can be any valid \nPython regex pattern\nThis option can be set multiple times\n\n\n\n\n\n\n-a, --all-includes\n\n\nSongs must match all include filter criteria\n\n\n\n\n\n\n-A, --all-excludes\n\n\nSongs must match all exclude filter criteria\n\n\n\n\n\n\ninput\n\n\nFiles, directories, or glob patterns to upload\nDefaults to current directory if omitted\n\n\n\n\n\n\n\n\n* \nFilter fields can be any of artist, title, album, or albumartist/album_artist\n\n\nExamples:\n\n\ngmupload \"/path/to/music\" \"/other/path/to/music.mp3\" \"/another/path/to/*.flac\"\ngmupload -e 'MyFolderName' \"/path/to/music\"\ngmupload -f 'artist:Muse' \"/path/to/music\"\n\n\n\n\ngmdownload\n\n\ngmdownload (-h | --help)\ngmdownload [-f FILTER]... [-F FILTER]... [options] [<output>\n\n\n\n\n\n\n\n\n\n\nOptions\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\n-h, --help\n\n\nShow help message\n\n\n\n\n\n\n-c, --cred\n\n\nSpecify oauth credential file name to use/create\n(Default: \"oauth\")\n\n\n\n\n\n\n-U ID --uploader-id ID\n\n\nA unique id given as a MAC address (e.g. '00:11:22:33:AA:BB').\nThis should only be provided when the default does not work.\n\n\n\n\n\n\n-l, --log\n\n\nEnable gmusicapi logging\n\n\n\n\n\n\n-d, --dry-run\n\n\nOutput list of songs that would be uploaded and excluded\n\n\n\n\n\n\n-q, --quiet\n\n\nDon't output status messages\nWith -l,--log will display gmusicapi warnings\nWith -d,--dry-run will display song list\n\n\n\n\n\n\n-f, --include-filter\n\n\nInclude Google songs by field:pattern filter (e.g. \"artist:Muse\").*\nValues can be any valid \nPython regex pattern\nThis option can be set multiple times\n\n\n\n\n\n\n-F, --exclude-filter\n\n\nExclude Google songs by field:pattern filter (e.g. \"artist:Muse\").*\nValues can be any valid \nPython regex pattern\nThis option can be set multiple times\n\n\n\n\n\n\n-a, --all-includes\n\n\nSongs must match all include filter criteria\n\n\n\n\n\n\n-A, --all-excludes\n\n\nSongs must match all exclude filter criteria\n\n\n\n\n\n\noutput\n\n\nOutput file or directory name which can include template patterns\nDefaults to name suggested by Google Music in your current directory\n\n\n\n\n\n\n\n\n* \nFilter fields can be any of artist, title, album, or albumartist/album_artist\n\n\nExamples:\n\n\ngmdownload -a -f 'artist:Muse' -f 'album:Black Holes' \"/path/to/%artist%/%album%/%title%\"\ngmdownload -f 'artist:Muse|Modest Mouse' \"/path/to/%artist%/%album%/%title%\"",
+            "title": "Use"
+        },
+        {
+            "location": "/usage/#general",
+            "text": "script [options] [input/output]  During the first run of the scripts, you will be given a link to authorize the application with Google Music if necessary. Paste that link in your browser and click Allow. Enter the given code into the terminal prompt.",
+            "title": "General"
+        },
+        {
+            "location": "/usage/#output-pattern-replacements",
+            "text": "Pattern  Field      %artist%  artist    %title%  title    %track%  tracknumber    %track2%  tracknumber (zero padded)    %album%  album    %date%  date    %genre%  genre    %albumartist%  albumartist    %disc%  discnumber    %suggested%  Filename suggested by Google",
+            "title": "Output pattern replacements"
+        },
+        {
+            "location": "/usage/#gmsearch",
+            "text": "gmsearch (-h | --help)\ngmsearch [options] [-f FILTER]... [-F FILTER]...     Options  Description      -h, --help  Show help message    -u USERNAME, --user USERNAME  Your Google username or e-mail address    -p PASSWORD, --pass PASSWORD  Your Google or app-specific password    -I ID --android-id ID  An Android device id.    -l, --log  Enable gmusicapi logging    -q, --quiet  Don't output status messages With -l,--log will display gmusicapi warnings    -f, --include-filter  Include Google songs by field:pattern filter (e.g. \"artist:Muse\").* Values can be any valid  Python regex pattern This option can be set multiple times    -F, --exclude-filter  Exclude Google songs by field:pattern filter (e.g. \"artist:Muse\").* Values can be any valid  Python regex pattern This option can be set multiple times    -a, --all-includes  Songs must match all include filter criteria    -A, --all-excludes  Songs must match all exclude filter criteria    -y, --yes  Display results without asking for confirmation",
+            "title": "gmsearch"
+        },
+        {
+            "location": "/usage/#gmdelete",
+            "text": "gmdelete (-h | --help)\ngmdelete [options] [-f FILTER]... [-F FILTER]...     Options  Description      -h, --help  Show help message    -u USERNAME, --user USERNAME  Your Google username or e-mail address    -p PASSWORD, --pass PASSWORD  Your Google or app-specific password    -I ID --android-id ID  An Android device id.    -l, --log  Enable gmusicapi logging    -d, --dry-run  Output list of songs that would be uploaded and excluded    -q, --quiet  Don't output status messages With -l,--log will display gmusicapi warnings    -f, --include-filter  Include Google songs by field:pattern filter (e.g. \"artist:Muse\").* Values can be any valid  Python regex pattern This option can be set multiple times    -F, --exclude-filter  Exclude Google songs by field:pattern filter (e.g. \"artist:Muse\").* Values can be any valid  Python regex pattern This option can be set multiple times    -a, --all-includes  Songs must match all include filter criteria    -A, --all-excludes  Songs must match all exclude filter criteria    -y, --yes  Display results without asking for confirmation",
+            "title": "gmdelete"
+        },
+        {
+            "location": "/usage/#gmsync",
+            "text": "gmsync (-h | --help)\ngmsync up [-e PATTERN]... [-f FILTER]... [-F FILTER]... [options] [<input>]...\ngmsync down [-e PATTERN]... [-f FILTER]... [-F FILTER]... [options] [<output>]\ngmsync [-e PATTERN]... [-f FILTER]... [-F FILTER]... [options] [<input>]...  Supports  .mp3 ,  .flac ,  .m4a ,  .ogg  Non-MP3 files are transcoded with ffmpeg/avconv to 320kbps MP3 for uploading     Options  Description      -h, --help  Show help message    -c, --cred  Specify oauth credential file name to use/create (Default: \"oauth\")    -U ID --uploader-id ID  A unique id given as a MAC address (e.g. '00:11:22:33:AA:BB'). This should only be provided when the default does not work.    -l, --log  Enable gmusicapi logging    -m, --match  Enable scan and match    -d, --dry-run  Output list of songs that would be uploaded and excluded    -q, --quiet  Don't output status messages With -l,--log will display gmusicapi warnings With -d,--dry-run will display song list    --delete-on-success  Delete successfully uploaded local files.    -R, --no-recursion  Disable recursion when scanning for local files. This is equivalent to setting --max-depth to 0.    --max-depth DEPTH  Set maximum depth of recursion when scanning for local files. Default is infinite recursion. Has no effect when -R, --no-recursion set.    -e, -exclude  Exclude file paths matching a Python regex pattern This option can be set multiple times    -f, --include-filter  Include Google songs (download) or local songs (upload) by field:pattern filter (e.g. \"artist:Muse\").* Values can be any valid  Python regex pattern This option can be set multiple times    -F, --exclude-filter  Exclude Google songs (download) or local songs (upload) by field:pattern filter (e.g. \"artist:Muse\").* Values can be any valid  Python regex pattern This option can be set multiple times    -a, --all-includes  Songs must match all include filter criteria    -A, --all-excludes  Songs must match all exclude filter criteria    input  Files, directories, or glob patterns to upload Defaults to current directory if omitted    output  Output file or directory name which can include template patterns Defaults to name suggested by Google Music in your current directory     *  Filter fields can be any of artist, title, album, or albumartist/album_artist     Commands  Description      up  Sync local songs to Google Music. This is the default behavior.    down  Sync Google Music songs to local computer.     Examples:  gmsync -m \"/path/to/music\" \"/other/path/to/music.mp3\" \"/another/path/to/*.flac\"\ngmsync up -e 'MyFolderName' \"/path/to/music\"\ngmsync up -f 'artist:Muse' \"/path/to/music\"\ngmsync down -a -f 'artist:Muse' -f 'album:Black Holes' \"/path/to/%artist%/%album%/%title%\"\ngmsync down -f 'artist:Muse|Modest Mouse' \"/path/to/%artist%/%album%/%title%\"",
+            "title": "gmsync"
+        },
+        {
+            "location": "/usage/#gmupload",
+            "text": "gmupload (-h | --help)\ngmupload [-e PATTERN]... [-f FILTER]... [-F FILTER]... [options] [<input>]...  Supports  .mp3 ,  .flac ,  .m4a ,  .ogg  Non-MP3 files are transcoded with ffmpeg/avconv to 320kbps MP3 for uploading     Options  Description      -h, --help  Show help message    -c, --cred  Specify oauth credential file name to use/create (Default: \"oauth\")    -U ID --uploader-id ID  A unique id given as a MAC address (e.g. '00:11:22:33:AA:BB'). This should only be provided when the default does not work.    -l, --log  Enable gmusicapi logging    -m, --match  Enable scan and match    -d, --dry-run  Output list of songs that would be uploaded and excluded    -q, --quiet  Don't output status messages With -l,--log will display gmusicapi warnings With -d,--dry-run will display song list    --delete-on-success  Delete successfully uploaded local files.    -R, --no-recursion  Disable recursion when scanning for local files. This is equivalent to setting --max-depth to 0.    --max-depth DEPTH  Set maximum depth of recursion when scanning for local files. Default is infinite recursion. Has no effect when -R, --no-recursion set.    -e, -exclude  Exclude file paths matching a Python regex pattern This option can be set multiple times    -f, --include-filter  Include local songs by field:pattern filter (e.g. \"artist:Muse\").* Values can be any valid  Python regex pattern This option can be set multiple times    -F, --exclude-filter  Exclude local songs by field:pattern filter (e.g. \"artist:Muse\").* Values can be any valid  Python regex pattern This option can be set multiple times    -a, --all-includes  Songs must match all include filter criteria    -A, --all-excludes  Songs must match all exclude filter criteria    input  Files, directories, or glob patterns to upload Defaults to current directory if omitted     *  Filter fields can be any of artist, title, album, or albumartist/album_artist  Examples:  gmupload \"/path/to/music\" \"/other/path/to/music.mp3\" \"/another/path/to/*.flac\"\ngmupload -e 'MyFolderName' \"/path/to/music\"\ngmupload -f 'artist:Muse' \"/path/to/music\"",
+            "title": "gmupload"
+        },
+        {
+            "location": "/usage/#gmdownload",
+            "text": "gmdownload (-h | --help)\ngmdownload [-f FILTER]... [-F FILTER]... [options] [<output>     Options  Description      -h, --help  Show help message    -c, --cred  Specify oauth credential file name to use/create (Default: \"oauth\")    -U ID --uploader-id ID  A unique id given as a MAC address (e.g. '00:11:22:33:AA:BB'). This should only be provided when the default does not work.    -l, --log  Enable gmusicapi logging    -d, --dry-run  Output list of songs that would be uploaded and excluded    -q, --quiet  Don't output status messages With -l,--log will display gmusicapi warnings With -d,--dry-run will display song list    -f, --include-filter  Include Google songs by field:pattern filter (e.g. \"artist:Muse\").* Values can be any valid  Python regex pattern This option can be set multiple times    -F, --exclude-filter  Exclude Google songs by field:pattern filter (e.g. \"artist:Muse\").* Values can be any valid  Python regex pattern This option can be set multiple times    -a, --all-includes  Songs must match all include filter criteria    -A, --all-excludes  Songs must match all exclude filter criteria    output  Output file or directory name which can include template patterns Defaults to name suggested by Google Music in your current directory     *  Filter fields can be any of artist, title, album, or albumartist/album_artist  Examples:  gmdownload -a -f 'artist:Muse' -f 'album:Black Holes' \"/path/to/%artist%/%album%/%title%\"\ngmdownload -f 'artist:Muse|Modest Mouse' \"/path/to/%artist%/%album%/%title%\"",
+            "title": "gmdownload"
+        },
+        {
+            "location": "/contributing/",
+            "text": "Submitting an issue\n\n\nBug reports and feature requests can be submitted to the \nIssue Tracker\n.\n\n\nSome general guidelines to follow:\n\n\n\n\nUse an appropriate, descriptive title.\n\n\nProvide as many details as possible.\n\n\nDon't piggy-back. Keep separate topics in separate issues.\n\n\n\n\nSubmitting code\n\n\nPatches are welcome. Keep your code consistent with the rest of the project. \nPEP8\n is a good guide, but with the following specific exceptions to keep in mind for coding/linting:\n\n\n\n\nTabs should be used for indentation of code.\n\n\nI don't have a set maximum line length. However, I do like to keep lines viewable in my editor when windowed (150).\n\n\n\n\nSome linter errors may need to be ignored to accommodate these differences.\n\n\nFor simple, single file changes/additions, sending or linking your modified file is acceptable. For complex, multiple file changes, creating a diff file or using GitHub's \nPull Request\n feature is preferable.\n\n\nIf you have any questions or concerns, contact me through the methods listed below.\n\n\nPull Requests\n\n\nYou should create a separate \nfeature branch\n in your \nfork\n to commit your changes to. \nPull Requests\n will only be accepted if made from a \nfeature branch\n and against the \ndevel\n branch of this repository.\n\n\nCommit messages should be written in a \nwell-formed, consistent\n manner. See the \ncommit log\n for acceptable examples.\n\n\nEach commit should encompass the smallest logical changeset (e.g. changing two unrelated things in the same file would be two commits rather than one commit of \"Change filename\".) If you made a mistake in a commit in your Pull Request, you should \namend\n or \nrebase\n to change your previous commit(s) then \nforce push\n to the \nfeature branch\n in your \nfork\n.\n\n\nMisc\n\n\nFor anything else, contact me by e-mail at \nmail@thebigmunch.me\n or on IRC in \n#gmusicapi\n on \nirc.freenode.net",
+            "title": "Contribute"
+        },
+        {
+            "location": "/contributing/#submitting-an-issue",
+            "text": "Bug reports and feature requests can be submitted to the  Issue Tracker .  Some general guidelines to follow:   Use an appropriate, descriptive title.  Provide as many details as possible.  Don't piggy-back. Keep separate topics in separate issues.",
+            "title": "Submitting an issue"
+        },
+        {
+            "location": "/contributing/#submitting-code",
+            "text": "Patches are welcome. Keep your code consistent with the rest of the project.  PEP8  is a good guide, but with the following specific exceptions to keep in mind for coding/linting:   Tabs should be used for indentation of code.  I don't have a set maximum line length. However, I do like to keep lines viewable in my editor when windowed (150).   Some linter errors may need to be ignored to accommodate these differences.  For simple, single file changes/additions, sending or linking your modified file is acceptable. For complex, multiple file changes, creating a diff file or using GitHub's  Pull Request  feature is preferable.  If you have any questions or concerns, contact me through the methods listed below.",
+            "title": "Submitting code"
+        },
+        {
+            "location": "/contributing/#pull-requests",
+            "text": "You should create a separate  feature branch  in your  fork  to commit your changes to.  Pull Requests  will only be accepted if made from a  feature branch  and against the  devel  branch of this repository.  Commit messages should be written in a  well-formed, consistent  manner. See the  commit log  for acceptable examples.  Each commit should encompass the smallest logical changeset (e.g. changing two unrelated things in the same file would be two commits rather than one commit of \"Change filename\".) If you made a mistake in a commit in your Pull Request, you should  amend  or  rebase  to change your previous commit(s) then  force push  to the  feature branch  in your  fork .",
+            "title": "Pull Requests"
+        },
+        {
+            "location": "/contributing/#misc",
+            "text": "For anything else, contact me by e-mail at  mail@thebigmunch.me  or on IRC in  #gmusicapi  on  irc.freenode.net",
+            "title": "Misc"
+        },
+        {
+            "location": "/changelog/",
+            "text": "Change Log\n\n\nNotable changes for the \ngmusicapi-scripts\n project. This project uses \nSemantic Versioning\n principles.\n\n\n0.3.0\n (2016-02-29)\n\n\nCommits\n\n\nAdded\n\n\n\n\nOutput songs to be filtered in dry-run.\n\n\n\n\nChanged\n\n\n\n\nChange --include-all to --all-includes to match parameter change in gmusicapi-wrapper.\n\n\nChange --exclude-all to --all-excludes to match parameter change in gmusicapi-wrapper.\n\n\nChange behavior of --max-depth=0; it now limits to the current directory level instead of being infinite recursion.\n\n\n\n\n0.2.1\n (2016-02-15)\n\n\nCommits\n\n\nFixed\n\n\n\n\nUse correct track number metadata key for sorting.\n\n\nFix delete on success check.\n\n\n\n\nChanged\n\n\n\n\nUpdate supported gmusicapi-wrapper versions.\n\n\n\n\n0.2.0\n (2016-02-13)\n\n\nCommits\n\n\nAdded\n\n\n\n\nPython 3 support.\n\n\n\n\nRemove\n\n\n\n\nPython 2 support.\n\n\n\n\nChanged\n\n\n\n\nPort to Python 3. Python 2 is no longer supported.\n\n\n\n\n0.1.0\n (2015-12-02)\n\n\nCommits\n\n\n\n\nFirst package release for PyPi.",
+            "title": "Changelog"
+        },
+        {
+            "location": "/changelog/#change-log",
+            "text": "Notable changes for the  gmusicapi-scripts  project. This project uses  Semantic Versioning  principles.",
+            "title": "Change Log"
+        },
+        {
+            "location": "/changelog/#030-2016-02-29",
+            "text": "Commits",
+            "title": "0.3.0 (2016-02-29)"
+        },
+        {
+            "location": "/changelog/#added",
+            "text": "Output songs to be filtered in dry-run.",
+            "title": "Added"
+        },
+        {
+            "location": "/changelog/#changed",
+            "text": "Change --include-all to --all-includes to match parameter change in gmusicapi-wrapper.  Change --exclude-all to --all-excludes to match parameter change in gmusicapi-wrapper.  Change behavior of --max-depth=0; it now limits to the current directory level instead of being infinite recursion.",
+            "title": "Changed"
+        },
+        {
+            "location": "/changelog/#021-2016-02-15",
+            "text": "Commits",
+            "title": "0.2.1 (2016-02-15)"
+        },
+        {
+            "location": "/changelog/#fixed",
+            "text": "Use correct track number metadata key for sorting.  Fix delete on success check.",
+            "title": "Fixed"
+        },
+        {
+            "location": "/changelog/#changed_1",
+            "text": "Update supported gmusicapi-wrapper versions.",
+            "title": "Changed"
+        },
+        {
+            "location": "/changelog/#020-2016-02-13",
+            "text": "Commits",
+            "title": "0.2.0 (2016-02-13)"
+        },
+        {
+            "location": "/changelog/#added_1",
+            "text": "Python 3 support.",
+            "title": "Added"
+        },
+        {
+            "location": "/changelog/#remove",
+            "text": "Python 2 support.",
+            "title": "Remove"
+        },
+        {
+            "location": "/changelog/#changed_2",
+            "text": "Port to Python 3. Python 2 is no longer supported.",
+            "title": "Changed"
+        },
+        {
+            "location": "/changelog/#010-2015-12-02",
+            "text": "Commits   First package release for PyPi.",
+            "title": "0.1.0 (2015-12-02)"
+        }
+    ]
+}

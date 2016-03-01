@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="no-js ie6"><![endif]-->
+<!--[if IE 7 ]><html class="no-js ie7"><![endif]-->
+<!--[if IE 8 ]><html class="no-js ie8"><![endif]-->
+<!--[if IE 9 ]><html class="no-js ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    
+      
+        <title>Use - gmusicapi-scripts</title>
+      
+      
+      
+      
+    
+    <meta property="og:url" content="None">
+    <meta property="og:title" content="gmusicapi-scripts">
+    <meta property="og:image" content="None/../">
+    <meta name="apple-mobile-web-app-title" content="gmusicapi-scripts">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon-e565ddfa3b.ico">
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon-e565ddfa3b.ico">
+    <style>
+      @font-face {
+      	font-family: 'Icon';
+      	src: url('../assets/fonts/icon.eot?52m981');
+      	src: url('../assets/fonts/icon.eot?#iefix52m981')
+               format('embedded-opentype'),
+      		   url('../assets/fonts/icon.woff?52m981')
+               format('woff'),
+      		   url('../assets/fonts/icon.ttf?52m981')
+               format('truetype'),
+      		   url('../assets/fonts/icon.svg?52m981#icon')
+               format('svg');
+      	font-weight: normal;
+      	font-style: normal;
+      }
+    </style>
+    <link rel="stylesheet" href="../assets/stylesheets/application-b64b728552.css">
+    
+      <link rel="stylesheet" href="../assets/stylesheets/palettes-05ab2406df.css">
+    
+    
+      
+      
+      
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu+Mono">
+      <style>
+        body, input {
+          font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+        }
+        pre, code {
+          font-family: 'Ubuntu Mono', 'Courier New', 'Courier', monospace;
+        }
+      </style>
+    
+    
+    <script src="../assets/javascripts/modernizr-4ab42b99fd.js"></script>
+    
+  </head>
+  
+  
+  
+  <body class="palette-primary-indigo palette-accent-light-blue">
+    
+      
+      
+    
+    <div class="backdrop">
+      <div class="backdrop-paper"></div>
+    </div>
+    <input class="toggle" type="checkbox" id="toggle-drawer">
+    <input class="toggle" type="checkbox" id="toggle-search">
+    <label class="toggle-button overlay" for="toggle-drawer"></label>
+    <header class="header">
+      <nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        
+          <span class="path">
+            
+          </span>
+        
+        Use
+      </div>
+    </div>
+    
+    
+      
+      <div class="button button-github" role="button" aria-label="GitHub">
+        <a href="https://github.com/thebigmunch" title="@thebigmunch on GitHub" target="_blank" class="toggle-button icon icon-github"></a>
+      </div>
+    
+    <div class="button button-search" role="button" aria-label="Search">
+      <label class="toggle-button icon icon-search" title="Search" for="toggle-search"></label>
+    </div>
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+    </header>
+    <main class="main">
+      
+      <div class="drawer">
+        <nav aria-label="Navigation">
+  
+  <a href="https://github.com/thebigmunch/gmusicapi-scripts" class="project">
+    <div class="banner">
+      
+      <div class="name">
+        <strong>gmusicapi-scripts </strong>
+        
+          <br>
+          thebigmunch/gmusicapi-scripts
+        
+      </div>
+    </div>
+  </a>
+  <div class="scrollable">
+    <div class="wrapper">
+      
+        <ul class="repo">
+          <li class="repo-download">
+            
+            <a href="https://github.com/thebigmunch/gmusicapi-scripts/archive/master.zip" target="_blank" title="Download" data-action="download">
+              <i class="icon icon-download"></i> Download
+            </a>
+          </li>
+          <li class="repo-stars">
+            <a href="https://github.com/thebigmunch/gmusicapi-scripts/stargazers" target="_blank" title="Stargazers" data-action="star">
+              <i class="icon icon-star"></i> Stars
+              <span class="count">&ndash;</span>
+            </a>
+          </li>
+        </ul>
+        <hr>
+      
+      <div class="toc">
+        <ul>
+          
+            
+  <li>
+    <a class="" title="Home" href="..">
+      Home
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="" title="Install" href="../install/">
+      Install
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="current" title="Use" href="./">
+      Use
+    </a>
+    
+      
+      
+        <ul>
+          
+            <li class="anchor">
+              <a title="General" href="#general">
+                General
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="Output pattern replacements" href="#output-pattern-replacements">
+                Output pattern replacements
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="gmsearch" href="#gmsearch">
+                gmsearch
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="gmdelete" href="#gmdelete">
+                gmdelete
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="gmsync" href="#gmsync">
+                gmsync
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="gmupload" href="#gmupload">
+                gmupload
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="gmdownload" href="#gmdownload">
+                gmdownload
+              </a>
+            </li>
+          
+        </ul>
+      
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="" title="Contribute" href="../contributing/">
+      Contribute
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="" title="Changelog" href="../changelog/">
+      Changelog
+    </a>
+    
+  </li>
+
+          
+        </ul>
+        
+          <hr>
+          <span class="section">The author</span>
+          <ul>
+            
+            
+              
+              <li>
+                <a href="https://github.com/thebigmunch" target="_blank" title="@thebigmunch on GitHub">
+                  @thebigmunch on GitHub
+                </a>
+              </li>
+            
+          </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+      </div>
+      <article class="article">
+        <div class="wrapper">
+          
+            <h1>Use</h1>
+          
+          <h2 id="general">General</h2>
+<p><code>script [options] [input/output]</code></p>
+<p>During the first run of the scripts, you will be given a link to authorize the application with Google Music if necessary. Paste that link in your browser and click Allow. Enter the given code into the terminal prompt.</p>
+<h2 id="output-pattern-replacements">Output pattern replacements</h2>
+<table>
+<thead>
+<tr>
+<th>Pattern</th>
+<th>Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>%artist%</td>
+<td>artist</td>
+</tr>
+<tr>
+<td>%title%</td>
+<td>title</td>
+</tr>
+<tr>
+<td>%track%</td>
+<td>tracknumber</td>
+</tr>
+<tr>
+<td>%track2%</td>
+<td>tracknumber (zero padded)</td>
+</tr>
+<tr>
+<td>%album%</td>
+<td>album</td>
+</tr>
+<tr>
+<td>%date%</td>
+<td>date</td>
+</tr>
+<tr>
+<td>%genre%</td>
+<td>genre</td>
+</tr>
+<tr>
+<td>%albumartist%</td>
+<td>albumartist</td>
+</tr>
+<tr>
+<td>%disc%</td>
+<td>discnumber</td>
+</tr>
+<tr>
+<td>%suggested%</td>
+<td>Filename suggested by Google</td>
+</tr>
+</tbody>
+</table>
+<h2 id="gmsearch">gmsearch</h2>
+<pre><code>gmsearch (-h | --help)
+gmsearch [options] [-f FILTER]... [-F FILTER]...
+</code></pre>
+
+<table>
+<thead>
+<tr>
+<th>Options</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-h, --help</td>
+<td>Show help message</td>
+</tr>
+<tr>
+<td>-u USERNAME, --user USERNAME</td>
+<td>Your Google username or e-mail address</td>
+</tr>
+<tr>
+<td>-p PASSWORD, --pass PASSWORD</td>
+<td>Your Google or app-specific password</td>
+</tr>
+<tr>
+<td>-I ID --android-id ID</td>
+<td>An Android device id.</td>
+</tr>
+<tr>
+<td>-l, --log</td>
+<td>Enable gmusicapi logging</td>
+</tr>
+<tr>
+<td>-q, --quiet</td>
+<td>Don't output status messages<br>With -l,--log will display gmusicapi warnings</td>
+</tr>
+<tr>
+<td>-f, --include-filter</td>
+<td>Include Google songs by field:pattern filter (e.g. "artist:Muse").*<br>Values can be any valid <a href="http://docs.python.org/3/library/re.html">Python regex pattern</a><br>This option can be set multiple times</td>
+</tr>
+<tr>
+<td>-F, --exclude-filter</td>
+<td>Exclude Google songs by field:pattern filter (e.g. "artist:Muse").*<br>Values can be any valid <a href="http://docs.python.org/3/library/re.html">Python regex pattern</a><br>This option can be set multiple times</td>
+</tr>
+<tr>
+<td>-a, --all-includes</td>
+<td>Songs must match all include filter criteria</td>
+</tr>
+<tr>
+<td>-A, --all-excludes</td>
+<td>Songs must match all exclude filter criteria</td>
+</tr>
+<tr>
+<td>-y, --yes</td>
+<td>Display results without asking for confirmation</td>
+</tr>
+</tbody>
+</table>
+<h2 id="gmdelete">gmdelete</h2>
+<pre><code>gmdelete (-h | --help)
+gmdelete [options] [-f FILTER]... [-F FILTER]...
+</code></pre>
+
+<table>
+<thead>
+<tr>
+<th>Options</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-h, --help</td>
+<td>Show help message</td>
+</tr>
+<tr>
+<td>-u USERNAME, --user USERNAME</td>
+<td>Your Google username or e-mail address</td>
+</tr>
+<tr>
+<td>-p PASSWORD, --pass PASSWORD</td>
+<td>Your Google or app-specific password</td>
+</tr>
+<tr>
+<td>-I ID --android-id ID</td>
+<td>An Android device id.</td>
+</tr>
+<tr>
+<td>-l, --log</td>
+<td>Enable gmusicapi logging</td>
+</tr>
+<tr>
+<td>-d, --dry-run</td>
+<td>Output list of songs that would be uploaded and excluded</td>
+</tr>
+<tr>
+<td>-q, --quiet</td>
+<td>Don't output status messages<br>With -l,--log will display gmusicapi warnings</td>
+</tr>
+<tr>
+<td>-f, --include-filter</td>
+<td>Include Google songs by field:pattern filter (e.g. "artist:Muse").*<br>Values can be any valid <a href="http://docs.python.org/3/library/re.html">Python regex pattern</a><br>This option can be set multiple times</td>
+</tr>
+<tr>
+<td>-F, --exclude-filter</td>
+<td>Exclude Google songs by field:pattern filter (e.g. "artist:Muse").*<br>Values can be any valid <a href="http://docs.python.org/3/library/re.html">Python regex pattern</a><br>This option can be set multiple times</td>
+</tr>
+<tr>
+<td>-a, --all-includes</td>
+<td>Songs must match all include filter criteria</td>
+</tr>
+<tr>
+<td>-A, --all-excludes</td>
+<td>Songs must match all exclude filter criteria</td>
+</tr>
+<tr>
+<td>-y, --yes</td>
+<td>Display results without asking for confirmation</td>
+</tr>
+</tbody>
+</table>
+<h2 id="gmsync">gmsync</h2>
+<pre><code>gmsync (-h | --help)
+gmsync up [-e PATTERN]... [-f FILTER]... [-F FILTER]... [options] [&lt;input&gt;]...
+gmsync down [-e PATTERN]... [-f FILTER]... [-F FILTER]... [options] [&lt;output&gt;]
+gmsync [-e PATTERN]... [-f FILTER]... [-F FILTER]... [options] [&lt;input&gt;]...
+</code></pre>
+
+<p>Supports <strong>.mp3</strong>, <strong>.flac</strong>, <strong>.m4a</strong>, <strong>.ogg</strong><br />
+<em>Non-MP3 files are transcoded with ffmpeg/avconv to 320kbps MP3 for uploading</em></p>
+<table>
+<thead>
+<tr>
+<th>Options</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-h, --help</td>
+<td>Show help message</td>
+</tr>
+<tr>
+<td>-c, --cred</td>
+<td>Specify oauth credential file name to use/create<br>(Default: "oauth")</td>
+</tr>
+<tr>
+<td>-U ID --uploader-id ID</td>
+<td>A unique id given as a MAC address (e.g. '00:11:22:33:AA:BB').<br>This should only be provided when the default does not work.</td>
+</tr>
+<tr>
+<td>-l, --log</td>
+<td>Enable gmusicapi logging</td>
+</tr>
+<tr>
+<td>-m, --match</td>
+<td>Enable scan and match</td>
+</tr>
+<tr>
+<td>-d, --dry-run</td>
+<td>Output list of songs that would be uploaded and excluded</td>
+</tr>
+<tr>
+<td>-q, --quiet</td>
+<td>Don't output status messages<br>With -l,--log will display gmusicapi warnings<br>With -d,--dry-run will display song list</td>
+</tr>
+<tr>
+<td>--delete-on-success</td>
+<td>Delete successfully uploaded local files.</td>
+</tr>
+<tr>
+<td>-R, --no-recursion</td>
+<td>Disable recursion when scanning for local files.<br>This is equivalent to setting --max-depth to 0.</td>
+</tr>
+<tr>
+<td>--max-depth DEPTH</td>
+<td>Set maximum depth of recursion when scanning for local files.<br>Default is infinite recursion.<br>Has no effect when -R, --no-recursion set.</td>
+</tr>
+<tr>
+<td>-e, -exclude</td>
+<td>Exclude file paths matching a Python regex pattern<br>This option can be set multiple times</td>
+</tr>
+<tr>
+<td>-f, --include-filter</td>
+<td>Include Google songs (download) or local songs (upload) by field:pattern filter (e.g. "artist:Muse").*<br>Values can be any valid <a href="http://docs.python.org/3/library/re.html">Python regex pattern</a><br>This option can be set multiple times</td>
+</tr>
+<tr>
+<td>-F, --exclude-filter</td>
+<td>Exclude Google songs (download) or local songs (upload) by field:pattern filter (e.g. "artist:Muse").*<br>Values can be any valid <a href="http://docs.python.org/3/library/re.html">Python regex pattern</a><br>This option can be set multiple times</td>
+</tr>
+<tr>
+<td>-a, --all-includes</td>
+<td>Songs must match all include filter criteria</td>
+</tr>
+<tr>
+<td>-A, --all-excludes</td>
+<td>Songs must match all exclude filter criteria</td>
+</tr>
+<tr>
+<td>input</td>
+<td>Files, directories, or glob patterns to upload<br>Defaults to current directory if omitted</td>
+</tr>
+<tr>
+<td>output</td>
+<td>Output file or directory name which can include template patterns<br>Defaults to name suggested by Google Music in your current directory</td>
+</tr>
+</tbody>
+</table>
+<p>* <em>Filter fields can be any of artist, title, album, or albumartist/album_artist</em></p>
+<table>
+<thead>
+<tr>
+<th>Commands</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>up</td>
+<td>Sync local songs to Google Music. This is the default behavior.</td>
+</tr>
+<tr>
+<td>down</td>
+<td>Sync Google Music songs to local computer.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Examples:</strong></p>
+<pre><code>gmsync -m &quot;/path/to/music&quot; &quot;/other/path/to/music.mp3&quot; &quot;/another/path/to/*.flac&quot;
+gmsync up -e 'MyFolderName' &quot;/path/to/music&quot;
+gmsync up -f 'artist:Muse' &quot;/path/to/music&quot;
+gmsync down -a -f 'artist:Muse' -f 'album:Black Holes' &quot;/path/to/%artist%/%album%/%title%&quot;
+gmsync down -f 'artist:Muse|Modest Mouse' &quot;/path/to/%artist%/%album%/%title%&quot;
+</code></pre>
+
+<h2 id="gmupload">gmupload</h2>
+<pre><code>gmupload (-h | --help)
+gmupload [-e PATTERN]... [-f FILTER]... [-F FILTER]... [options] [&lt;input&gt;]...
+</code></pre>
+
+<p>Supports <strong>.mp3</strong>, <strong>.flac</strong>, <strong>.m4a</strong>, <strong>.ogg</strong><br />
+<em>Non-MP3 files are transcoded with ffmpeg/avconv to 320kbps MP3 for uploading</em></p>
+<table>
+<thead>
+<tr>
+<th>Options</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-h, --help</td>
+<td>Show help message</td>
+</tr>
+<tr>
+<td>-c, --cred</td>
+<td>Specify oauth credential file name to use/create<br>(Default: "oauth")</td>
+</tr>
+<tr>
+<td>-U ID --uploader-id ID</td>
+<td>A unique id given as a MAC address (e.g. '00:11:22:33:AA:BB').<br>This should only be provided when the default does not work.</td>
+</tr>
+<tr>
+<td>-l, --log</td>
+<td>Enable gmusicapi logging</td>
+</tr>
+<tr>
+<td>-m, --match</td>
+<td>Enable scan and match</td>
+</tr>
+<tr>
+<td>-d, --dry-run</td>
+<td>Output list of songs that would be uploaded and excluded</td>
+</tr>
+<tr>
+<td>-q, --quiet</td>
+<td>Don't output status messages<br>With -l,--log will display gmusicapi warnings<br>With -d,--dry-run will display song list</td>
+</tr>
+<tr>
+<td>--delete-on-success</td>
+<td>Delete successfully uploaded local files.</td>
+</tr>
+<tr>
+<td>-R, --no-recursion</td>
+<td>Disable recursion when scanning for local files.<br>This is equivalent to setting --max-depth to 0.</td>
+</tr>
+<tr>
+<td>--max-depth DEPTH</td>
+<td>Set maximum depth of recursion when scanning for local files.<br>Default is infinite recursion.<br>Has no effect when -R, --no-recursion set.</td>
+</tr>
+<tr>
+<td>-e, -exclude</td>
+<td>Exclude file paths matching a Python regex pattern<br>This option can be set multiple times</td>
+</tr>
+<tr>
+<td>-f, --include-filter</td>
+<td>Include local songs by field:pattern filter (e.g. "artist:Muse").*<br>Values can be any valid <a href="http://docs.python.org/3/library/re.html">Python regex pattern</a><br>This option can be set multiple times</td>
+</tr>
+<tr>
+<td>-F, --exclude-filter</td>
+<td>Exclude local songs by field:pattern filter (e.g. "artist:Muse").*<br>Values can be any valid <a href="http://docs.python.org/3/library/re.html">Python regex pattern</a><br>This option can be set multiple times</td>
+</tr>
+<tr>
+<td>-a, --all-includes</td>
+<td>Songs must match all include filter criteria</td>
+</tr>
+<tr>
+<td>-A, --all-excludes</td>
+<td>Songs must match all exclude filter criteria</td>
+</tr>
+<tr>
+<td>input</td>
+<td>Files, directories, or glob patterns to upload<br>Defaults to current directory if omitted</td>
+</tr>
+</tbody>
+</table>
+<p>* <em>Filter fields can be any of artist, title, album, or albumartist/album_artist</em></p>
+<p><strong>Examples:</strong></p>
+<pre><code>gmupload &quot;/path/to/music&quot; &quot;/other/path/to/music.mp3&quot; &quot;/another/path/to/*.flac&quot;
+gmupload -e 'MyFolderName' &quot;/path/to/music&quot;
+gmupload -f 'artist:Muse' &quot;/path/to/music&quot;
+</code></pre>
+
+<h2 id="gmdownload">gmdownload</h2>
+<pre><code>gmdownload (-h | --help)
+gmdownload [-f FILTER]... [-F FILTER]... [options] [&lt;output&gt;
+</code></pre>
+
+<table>
+<thead>
+<tr>
+<th>Options</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-h, --help</td>
+<td>Show help message</td>
+</tr>
+<tr>
+<td>-c, --cred</td>
+<td>Specify oauth credential file name to use/create<br>(Default: "oauth")</td>
+</tr>
+<tr>
+<td>-U ID --uploader-id ID</td>
+<td>A unique id given as a MAC address (e.g. '00:11:22:33:AA:BB').<br>This should only be provided when the default does not work.</td>
+</tr>
+<tr>
+<td>-l, --log</td>
+<td>Enable gmusicapi logging</td>
+</tr>
+<tr>
+<td>-d, --dry-run</td>
+<td>Output list of songs that would be uploaded and excluded</td>
+</tr>
+<tr>
+<td>-q, --quiet</td>
+<td>Don't output status messages<br>With -l,--log will display gmusicapi warnings<br>With -d,--dry-run will display song list</td>
+</tr>
+<tr>
+<td>-f, --include-filter</td>
+<td>Include Google songs by field:pattern filter (e.g. "artist:Muse").*<br>Values can be any valid <a href="http://docs.python.org/3/library/re.html">Python regex pattern</a><br>This option can be set multiple times</td>
+</tr>
+<tr>
+<td>-F, --exclude-filter</td>
+<td>Exclude Google songs by field:pattern filter (e.g. "artist:Muse").*<br>Values can be any valid <a href="http://docs.python.org/3/library/re.html">Python regex pattern</a><br>This option can be set multiple times</td>
+</tr>
+<tr>
+<td>-a, --all-includes</td>
+<td>Songs must match all include filter criteria</td>
+</tr>
+<tr>
+<td>-A, --all-excludes</td>
+<td>Songs must match all exclude filter criteria</td>
+</tr>
+<tr>
+<td>output</td>
+<td>Output file or directory name which can include template patterns<br>Defaults to name suggested by Google Music in your current directory</td>
+</tr>
+</tbody>
+</table>
+<p>* <em>Filter fields can be any of artist, title, album, or albumartist/album_artist</em></p>
+<p><strong>Examples:</strong></p>
+<pre><code>gmdownload -a -f 'artist:Muse' -f 'album:Black Holes' &quot;/path/to/%artist%/%album%/%title%&quot;
+gmdownload -f 'artist:Muse|Modest Mouse' &quot;/path/to/%artist%/%album%/%title%&quot;
+</code></pre>
+          <aside class="copyright" role="note">
+            
+            Documentation built with
+            <a href="http://www.mkdocs.org" target="_blank">MkDocs</a>
+            using the
+            <a href="http://squidfunk.github.io/mkdocs-material/" target="_blank">
+              Material
+            </a>
+            theme.
+          </aside>
+          
+            <footer class="footer">
+              
+  <nav class="pagination" aria-label="Footer">
+    <div class="previous">
+      
+        <a href="../install/" title="Install">
+          <span class="direction">
+            Previous
+          </span>
+          <div class="page">
+            <div class="button button-previous" role="button" aria-label="Previous">
+              <i class="icon icon-back"></i>
+            </div>
+            <div class="stretch">
+              <div class="title">
+                Install
+              </div>
+            </div>
+          </div>
+        </a>
+      
+    </div>
+    <div class="next">
+      
+        <a href="../contributing/" title="Contribute">
+          <span class="direction">
+            Next
+          </span>
+          <div class="page">
+            <div class="stretch">
+              <div class="title">
+                Contribute
+              </div>
+            </div>
+            <div class="button button-next" role="button" aria-label="Next">
+              <i class="icon icon-forward"></i>
+            </div>
+          </div>
+        </a>
+      
+    </div>
+  </nav>
+
+            </footer>
+          
+        </div></article>
+      <div class="results" role="status" aria-live="polite">
+        <div class="scrollable">
+          <div class="wrapper">
+            <div class="meta"></div>
+            <div class="list"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      var base_url = '..';
+      var repo_id  = 'thebigmunch/gmusicapi-scripts';
+    </script>
+    <script src="../assets/javascripts/application-a10a824a49.js"></script>
+    
+    
+  </body>
+</html>
